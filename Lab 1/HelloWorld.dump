@@ -1,0 +1,28 @@
+
+HelloWorld.o:     file format pe-i386
+
+
+Disassembly of section .text:
+
+00000000 <_main>:
+   0:	55                   	push   ebp
+   1:	89 e5                	mov    ebp,esp
+   3:	83 e4 f0             	and    esp,0xfffffff0
+   6:	83 ec 20             	sub    esp,0x20
+   9:	e8 00 00 00 00       	call   e <_main+0xe>
+   e:	c7 44 24 1c 0a 00 00 	mov    DWORD PTR [esp+0x1c],0xa
+  15:	00 
+  16:	c7 44 24 18 14 00 00 	mov    DWORD PTR [esp+0x18],0x14
+  1d:	00 
+  1e:	8b 54 24 1c          	mov    edx,DWORD PTR [esp+0x1c]
+  22:	8b 44 24 18          	mov    eax,DWORD PTR [esp+0x18]
+  26:	01 d0                	add    eax,edx
+  28:	89 44 24 14          	mov    DWORD PTR [esp+0x14],eax
+  2c:	8b 44 24 14          	mov    eax,DWORD PTR [esp+0x14]
+  30:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  34:	c7 04 24 00 00 00 00 	mov    DWORD PTR [esp],0x0
+  3b:	e8 00 00 00 00       	call   40 <_main+0x40>
+  40:	b8 00 00 00 00       	mov    eax,0x0
+  45:	c9                   	leave  
+  46:	c3                   	ret    
+  47:	90                   	nop
