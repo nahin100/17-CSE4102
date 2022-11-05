@@ -1,0 +1,15 @@
+NUM 1=1
+term 1=1
+NUM 2=2
+exp ADD term 1+2=3
+NUM 3=3
+exp ADD term 3+3=6
+RESULT = 6
+NUM 2=2
+term 2=2
+NUM 3=3
+exp SUB term 2-3=-1
+NUM 1=1
+exp SUB term -1-1=-2
+RESULT = -2
+Parsing Finished
