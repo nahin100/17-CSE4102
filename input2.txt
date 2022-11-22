@@ -1,0 +1,22 @@
+int t1;
+int t2;
+int nextTerm;
+int n;
+
+n = 3;
+t1 = 0;
+t2 = 1;
+nextTerm = t1 + t2;
+print(t1);
+print(t2);
+
+while(n < 10)
+{
+    print(nextTerm);
+    
+    t1 = t2;
+    t2 = nextTerm;
+    nextTerm = t1 + t2;
+
+    n = n + 1;    
+}
